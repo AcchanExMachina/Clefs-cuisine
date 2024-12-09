@@ -2,9 +2,9 @@
 let Samir = ["Samir", "0769178438"];
 let Mamadou = ["Mamadou", "0615710137"];
 let Doriane = ["Doriane", "0784735326"];
-let Cedric = ["Cédric", "0641291747"];
-let Maxime = ["Maxime", "0606060606"];
-let Maher = ["Maher", "0707070707"];
+let Cedric = ["Cédric", "0696050648"];
+let Maxime = ["Maxime", "0695373005"];
+let Maher = ["Maher", "0641291747"];
 let Bafode = ["Bafodé", "0789902163"];
 
 // Ajouter les éléments dans le tableau principal
