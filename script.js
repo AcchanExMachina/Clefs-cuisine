@@ -25,4 +25,4 @@ function updateKeysHolder(index) {
 }
 
 // Exemple d'utilisation
-updateKeysHolder(1); // Affiche Mamadou et son numéro
+updateKeysHolder(0); // Affiche Mamadou et son numéro
