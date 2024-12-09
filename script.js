@@ -14,6 +14,7 @@ let keysHolder = [Samir, Mamadou, Doriane, Cedric, Maxime, Maher, Bafode];
 function updateKeysHolder(index) {
     // Vérifie si l'index est valide
     if (index >= 0 && index < keysHolder.length) {
+        
         let selectedKeyHolder = keysHolder[index];
         // Modifier le contenu des balises
         document.getElementById("forename").innerText = selectedKeyHolder[0];
