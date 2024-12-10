@@ -24,5 +24,5 @@ function updateKeysHolder(index) {
     }
 }
 
-
+console.log(updateKeysHolder(1));
 updateKeysHolder(1);
