@@ -25,4 +25,4 @@ function updateKeysHolder(index) {
 }
 
 
-updateKeysHolder(1);
+updateKeysHolder(0);
