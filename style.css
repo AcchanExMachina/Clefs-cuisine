@@ -1,81 +1,176 @@
-@import url(../01-Entrainement/css/reset.css);
+/* Structure par défaut (pour les écrans larges ou moyens) */
 
-.container{
+.container {
     background: #017e7f;
-    /* height: 75rem; */
     padding: 1rem 0 10rem;
-    
 }
 
-.title__h1{
+.title__h1 {
     font-size: 5rem;
-  text-align: center;
-  color: #fcedd8;
-     font-family: 'Niconne', cursive;
-  font-weight: 700;
-text-shadow: 5px 5px 0px #eb452b, 
-            10px 10px 0px #efa032, 
-            15px 15px 0px #46b59b, 
-            20px 20px 0px #017e7f, 
-            25px 25px 0px #052939;
+    text-align: center;
+    color: #fcedd8;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #eb452b,
+                 10px 10px 0px #efa032,
+                 15px 15px 0px #46b59b,
+                 20px 20px 0px #017e7f,
+                 25px 25px 0px #052939;
 }
 
-.header{
+.header {
     background-color: #eb452b;
     display: flex;
     flex-direction: column;
     width: 80%;
     align-items: center;
-    /* border: 2px solid black; */
-    padding: .5rem 1rem 5rem;
+    padding: 0.5rem 1rem 5rem;
     justify-content: center;
     margin: 0 auto;
     margin-top: 1rem;
 }
 
-.current__keysholder{
+.info__index {
     padding: 1rem;
     margin-top: 2.5rem;
     background-color: #efa032;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.current__keysholder, .header{
+.info__index, .header {
     border-radius: 2.5rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.form-group{
+.separation {
+    border: 2px solid black;
+}
+
+.information {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
-    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.index {
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.info {
     font-size: 2.5rem;
 }
 
-.form-control{
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    border-radius: 1rem;
-    background-color: rgb(245, 245, 245);
-    font-weight: bold;
-}
-
-.credits{
+.credits {
     width: 50%;
     background-color: #052939;
-    color: white;
+    color: black;
     margin: 0 auto;
     margin-top: 2.5rem;
     padding: 2.5rem;
     border-radius: 2.5rem;
-    box-shadow: rgba(5, 41, 57, 0.4) 5px 5px, rgba(5, 41, 57, 0.3) 10px 10px, rgba(5, 41, 57, 0.2) 15px 15px, rgba(5, 41, 57, 0.1) 20px 20px, rgba(5, 41, 57, 0.05) 25px 25px;
+    box-shadow: rgba(5, 41, 57, 0.4) 5px 5px, 
+                rgba(5, 41, 57, 0.3) 10px 10px, 
+                rgba(5, 41, 57, 0.2) 15px 15px, 
+                rgba(5, 41, 57, 0.1) 20px 20px, 
+                rgba(5, 41, 57, 0.05) 25px 25px;
 }
 
-.credits__et__responsabilites{
+.credits__et__responsabilites {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: bold;
+    color: white;
 }
 
-.disclaimer{
+.disclaimer {
     font-size: 1.25rem;
+    gap: 5px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* Responsive design */
+
+/* Petits écrans (smartphones, largeur max 768px) */
+@media (max-width: 768px) {
+    .header {
+        width: 95%;
+        padding: 1rem 0.5rem 3rem;
+    }
+
+    .title__h1 {
+        font-size: 3.5rem;
+    }
+
+    .info__index {
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .information {
+        margin-bottom: 1rem;
+    }
+
+    .index {
+        font-size: 1.2rem;
+    }
+
+    .info {
+        font-size: 1.8rem;
+    }
+
+    .credits {
+        width: 90%;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .credits__et__responsabilites {
+        font-size: 1.2rem;
+    }
+
+    .disclaimer {
+        font-size: 1rem;
+    }
+}
+
+/* Très petits écrans (smartphones en mode portrait, largeur max 480px) */
+@media (max-width: 480px) {
+    .title__h1 {
+        font-size: 2.5rem;
+    }
+
+    .info__index {
+        padding: 0.5rem;
+    }
+
+    .information {
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+    }
+
+    .index, .info {
+        font-size: 1rem;
+    }
+
+    .credits {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .credits__et__responsabilites {
+        font-size: 1rem;
+    }
 }
