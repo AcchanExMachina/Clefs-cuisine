@@ -26,4 +26,4 @@ function updateKeysHolder(index) {
 }
 
 // Exemple d'utilisation : mettre à jour avec le premier élément (Samir)
-updateKeysHolder(0);
+updateKeysHolder(1);
