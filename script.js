@@ -1,11 +1,12 @@
 // Définir les prénoms, numéros et numéros de chambre
-let Samir = ["Samir", "0769178438", "332"];
-let Mamadou = ["Mamadou", "0615710137", "?"];
-let Doriane = ["Doriane", "0784735326", "?"];
-let Cedric = ["Cédric", "0696050648", "?"];
-let Maxime = ["Maxime", "0695373005", "?"];
-let Maher = ["Maher", "0641291747", "?"];
-let Bafode = ["Bafodé", "0789902163", "?"];
+let Samir = ["Samir", "07 69 17 84 38", "332"];
+let Mamadou = ["Mamadou", "06 15 71 01 37", "213"];
+let Doriane = ["Doriane", "07 84 73 53 26", "?"];
+let Cedric = ["Cédric", "06 96 05 06 48", "?"];
+let Maxime = ["Maxime", "06 95 37 30 05", "?"];
+let Maher = ["Maher", "06 41 29 17 47", "326"];
+let Bafode = ["Bafodé", "07 89 90 21 63", "?"];
+let Thomas = ["Thomas", "07 49 05 71 94"]
 
 // Ajouter les éléments dans le tableau principal
 let keysHolder = [Samir, Mamadou, Doriane, Cedric, Maxime, Maher, Bafode];
@@ -26,4 +27,4 @@ function updateKeysHolder(index) {
 }
 
 // Exemple d'utilisation : mettre à jour avec le premier élément (Samir)
-updateKeysHolder(0);
+updateKeysHolder(7);
