@@ -6,10 +6,10 @@ let Cedric = ["Cédric", "06 96 05 06 48", "?"];
 let Maxime = ["Maxime", "06 95 37 30 05", "?"];
 let Maher = ["Maher", "06 41 29 17 47", "326"];
 let Bafode = ["Bafodé", "07 89 90 21 63", "?"];
-let Thomas = ["Thomas", "07 49 05 71 94", "?"];
+let Thomas = ["Thomas", "07 49 05 71 94"]
 
 // Ajouter les éléments dans le tableau principal
-let keysHolder = [Samir, Mamadou, Doriane, Cedric, Maxime, Maher, Bafode];
+let keysHolder = [Samir, Mamadou, Doriane, Cedric, Maxime, Maher, Bafode, Thomas];
 
 // Fonction pour changer le contenu des balises
 function updateKeysHolder(index) {
@@ -26,4 +26,30 @@ function updateKeysHolder(index) {
     }
 }
 
-updateKeysHolder(1);
+// Exemple d'utilisation : mettre à jour avec le premier élément (Samir)
+// updateKeysHolder(7);
+
+// Récupérer l'élément du menu déroulant
+const personSelect = document.getElementById("personSelect");
+
+// Écouter le changement de sélection
+personSelect.addEventListener("change", function () {
+    // Récupérer la valeur de l'option sélectionnée (l'index)
+    const selectedIndex = parseInt(personSelect.value);
+
+    localStorage.setItem("lastSelectedIndex", selectedIndex);
+
+    // Appeler la fonction pour mettre à jour les informations
+    updateKeysHolder(selectedIndex);
+});
+
+// Vérifier si un index est sauvegardé dans le localStorage
+const savedIndex = localStorage.getItem("lastSelectedIndex");
+
+// Si un index existe, on le charge, sinon on affiche le premier élément
+if (savedIndex !== null) {
+    document.getElementById("personSelect").value = savedIndex;
+    updateKeysHolder(parseInt(savedIndex));
+} else {
+    updateKeysHolder(0); // Valeur par défaut si rien n'est sauvegardé
+}
