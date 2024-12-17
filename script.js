@@ -6,7 +6,7 @@ let Cedric = ["Cédric", "06 96 05 06 48", "?"];
 let Maxime = ["Maxime", "06 95 37 30 05", "?"];
 let Maher = ["Maher", "06 41 29 17 47", "326"];
 let Bafode = ["Bafodé", "07 89 90 21 63", "?"];
-let Thomas = ["Thomas", "07 49 05 71 94"]
+let Thomas = ["Thomas", "07 49 05 71 94", "?"]
 
 // Ajouter les éléments dans le tableau principal
 let keysHolder = [Samir, Mamadou, Doriane, Cedric, Maxime, Maher, Bafode, Thomas];
