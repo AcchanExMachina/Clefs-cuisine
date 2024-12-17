@@ -51,5 +51,5 @@ if (savedIndex !== null) {
     document.getElementById("personSelect").value = savedIndex;
     updateKeysHolder(parseInt(savedIndex));
 } else {
-    updateKeysHolder(0); // Valeur par défaut si rien n'est sauvegardé
+    updateKeysHolder(1); // Valeur par défaut si rien n'est sauvegardé
 }
